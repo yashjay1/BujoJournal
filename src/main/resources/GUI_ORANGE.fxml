@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Scene xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane prefHeight="1000.0" prefWidth="1623.0">
+      <children>
+         <BorderPane layoutX="194.0" layoutY="87.0" prefHeight="933.0" prefWidth="1466.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <top>
+               <VBox fx:id="nameVbox" alignment="CENTER" prefHeight="228.0" prefWidth="1623.0" style="-fx-background-color: #23395B;" BorderPane.alignment="CENTER">
+                  <children>
+                     <HBox alignment="CENTER" prefHeight="187.0" prefWidth="1623.0" style="-fx-background-color: #F0B67F;">
+                        <children>
+                           <Label fx:id="nameText" alignment="CENTER" prefHeight="198.0" prefWidth="972.0" text="[Name]'s Journal" textAlignment="CENTER" textFill="#eef5db" underline="true">
+                              <font>
+                                 <Font name="Monospaced Bold" size="85.0" />
+                              </font>
+                           </Label>
+                           <ImageView fitHeight="183.0" fitWidth="201.0" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                 <Image url="@miffy.png" />
+                              </image>
+                           </ImageView>
+                        </children>
+                     </HBox>
+                     <VBox alignment="BOTTOM_CENTER" prefHeight="37.0" prefWidth="1623.0">
+                        <children>
+                           <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="1623.0" style="-fx-background-color: #EEF5DB; -fx-border-color: #D6D1B1; -fx-border-width: 5; -fx-border-style: segments(10, 15, 15, 15)  line-cap round;" text="Week View" textFill="#f0b67f">
+                              <font>
+                                 <Font name="Monospaced Bold" size="24.0" />
+                              </font>
+                           </Label>
+                        </children>
+                     </VBox>
+                  </children>
+               </VBox>
+            </top>
+            <center>
+               <HBox fx:id="weekContainer" alignment="CENTER" style="-fx-background-color: #caf0f8;" BorderPane.alignment="CENTER">
+                  <children>
+                     <VBox fx:id="sundayBox" style="-fx-background-color: #FFFFFF;">
+                        <children>
+                           <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="154.0" style="-fx-background-color: #C7EFCF;" text="SUN" textFill="#bc8e63">
+                              <font>
+                                 <Font size="32.0" />
+                              </font>
+                           </Label>
+                           <VBox fx:id="sundayListBox" prefHeight="638.0" prefWidth="154.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #d9d9d9;" />
+                        </children>
+                     </VBox>
+                     <VBox fx:id="mondayBox" layoutX="10.0" layoutY="10.0">
+                        <children>
+                           <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="154.0" style="-fx-background-color: #C7EFCF;" text="MON" textFill="#bc8e63">
+                              <font>
+                                 <Font size="32.0" />
+                              </font>
+                           </Label>
+                           <VBox fx:id="mondayListBox" prefHeight="660.0" prefWidth="154.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #d9d9d9;" />
+                        </children>
+                     </VBox>
+                     <VBox fx:id="tuesdayBox" layoutX="164.0" layoutY="10.0">
+                        <children>
+                           <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="44.0" prefWidth="154.0" style="-fx-background-color: #C7EFCF;" text="TUE" textFill="#bc8e63">
+                              <font>
+                                 <Font name="System Font" size="32.0" />
+                              </font>
+                           </Label>
+                           <VBox fx:id="tuesdayListBox" prefHeight="715.0" prefWidth="154.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #d9d9d9;" />
+                        </children>
+                     </VBox>
+                     <VBox fx:id="wednesdayBox" layoutX="318.0" layoutY="10.0">
+                        <children>
+                           <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="154.0" style="-fx-background-color: #C7EFCF;" text="WED" textFill="#bc8e63">
+                              <font>
+                                 <Font size="32.0" />
+                              </font>
+                           </Label>
+                           <VBox fx:id="wednesdayListBox" prefHeight="715.0" prefWidth="154.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #d9d9d9;" />
+                        </children>
+                     </VBox>
+                     <VBox fx:id="thursdayBox" layoutX="472.0" layoutY="10.0">
+                        <children>
+                           <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="154.0" style="-fx-background-color: #C7EFCF;" text="THU" textFill="#bc8e63">
+                              <font>
+                                 <Font name="System Font" size="32.0" />
+                              </font>
+                           </Label>
+                           <VBox fx:id="thursdayListBox" prefHeight="715.0" prefWidth="154.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #d9d9d9;" />
+                        </children>
+                     </VBox>
+                     <VBox fx:id="fridayBox" layoutX="626.0" layoutY="10.0">
+                        <children>
+                           <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="154.0" style="-fx-background-color: #C7EFCF;" text="FRI" textFill="#bc8e63">
+                              <font>
+                                 <Font name="System Font" size="32.0" />
+                              </font>
+                           </Label>
+                           <VBox fx:id="fridayListBox" prefHeight="715.0" prefWidth="154.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #d9d9d9;" />
+                        </children>
+                     </VBox>
+                     <VBox fx:id="saturdayBox" layoutX="780.0" layoutY="10.0">
+                        <children>
+                           <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="158.0" style="-fx-background-color: #C7EFCF;" text="SAT" textFill="#bc8e63">
+                              <font>
+                                 <Font size="32.0" />
+                              </font>
+                           </Label>
+                           <VBox fx:id="saturdayListBox" prefHeight="715.0" prefWidth="154.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #d9d9d9;" />
+                        </children>
+                     </VBox>
+                  </children>
+               </HBox>
+            </center>
+            <left>
+               <HBox prefHeight="657.0" prefWidth="159.0" BorderPane.alignment="CENTER">
+                  <children>
+                     <VBox alignment="BOTTOM_CENTER" prefHeight="644.0" prefWidth="171.0" style="-fx-background-color: #Fe200;">
+                        <children>
+                           <VBox prefHeight="566.0" prefWidth="159.0">
+                              <children>
+                                 <ImageView fitHeight="150.0" fitWidth="158.0" pickOnBounds="true" preserveRatio="true" />
+                              </children>
+                           </VBox>
+                           <VBox alignment="BOTTOM_CENTER" prefHeight="105.0" prefWidth="159.0">
+                              <children>
+                                 <ImageView fitHeight="94.0" fitWidth="132.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                       <Image url="@rilakkuma.png" />
+                                    </image>
+                                 </ImageView>
+                              </children>
+                           </VBox>
+                        </children>
+                     </VBox>
+                  </children></HBox>
+            </left>
+            <right>
+               <VBox fx:id="todoBox" prefHeight="657.0" prefWidth="386.0" BorderPane.alignment="CENTER">
+                  <children>
+                     <VBox fx:id="todoBoxElementsHolder">
+                        <children>
+                           <Label fx:id="todoBoxLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="57.0" prefWidth="386.0" style="-fx-background-color: #C7EFCF;" text="Task / Event Details" textFill="#bc8e63">
+                              <font>
+                                 <Font size="32.0" />
+                              </font>
+                           </Label>
+                        </children>
+                     </VBox>
+                     <VBox fx:id="todoList" alignment="TOP_CENTER" prefHeight="637.0" prefWidth="386.0" style="-fx-background-color: #Fe200;">
+                        <children>
+                           <Label fx:id="numOfEvents" alignment="BOTTOM_LEFT" prefHeight="46.0" prefWidth="291.0" text="Number of Events: ">
+                              <font>
+                                 <Font size="18.0" />
+                              </font>
+                           </Label>
+                           <Label fx:id="numOfTasks" alignment="BOTTOM_LEFT" prefHeight="28.0" prefWidth="293.0" text="Number of Tasks:  ">
+                              <font>
+                                 <Font size="18.0" />
+                              </font>
+                           </Label>
+                           <Label fx:id="percentOfCompletion" alignment="BOTTOM_LEFT" prefHeight="28.0" prefWidth="292.0" text="Percentage of Tasks completed: ">
+                              <font>
+                                 <Font size="18.0" />
+                              </font>
+                           </Label>
+                           <Label fx:id="totalEventsDuration" alignment="BOTTOM_LEFT" prefHeight="28.0" prefWidth="292.0" text="Total Duration of all Events: ">
+                              <font>
+                                 <Font size="18.0" />
+                              </font>
+                           </Label>
+                        </children></VBox>
+                  </children>
+               </VBox>
+            </right>
+            <bottom>
+               <HBox alignment="CENTER_RIGHT" prefHeight="128.0" prefWidth="1458.0" BorderPane.alignment="CENTER">
+                  <children>
+                     <VBox alignment="BOTTOM_LEFT" prefHeight="128.0" prefWidth="158.0" style="-fx-background-color: #8EA8C3;">
+                        <children>
+                           <Button fx:id="mainMenuButton" mnemonicParsing="false" prefHeight="173.0" prefWidth="194.0" style="-fx-background-color: #EEF5DB; -fx-border-color: #D6D1B1; -fx-border-width: 5; -fx-border-style: segments(10, 15, 15, 15)  line-cap round;" text="Back to: Main Menu" textFill="#f0b67f" wrapText="true">
+                              <font>
+                                 <Font name="Monospaced Bold" size="21.0" />
+                              </font>
+                           </Button>
+                        </children>
+                     </VBox>
+                     <VBox prefHeight="176.0" prefWidth="1078.0">
+                        <children>
+                           <Label prefHeight="12.0" prefWidth="1078.0" style="-fx-background-color: #EEF5DB;" text="Notes:" textFill="#f0b67f">
+                              <font>
+                                 <Font name="Monospaced Bold" size="23.0" />
+                              </font>
+                           </Label>
+                           <TextArea fx:id="notesArea" prefHeight="101.0" prefWidth="1078.0" />
+                        </children>
+                     </VBox>
+                     <VBox prefHeight="100.0" prefWidth="387.0">
+                        <children>
+                           <HBox prefHeight="100.0" prefWidth="200.0">
+                              <children>
+                                 <MenuButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="64.0" prefWidth="193.0" style="-fx-background-color: #EEF5DB; -fx-border-color: #D6D1B1; -fx-border-width: 5; -fx-border-style: segments(10, 15, 15, 15)  line-cap round;" text="Add..." textFill="#f0b67f">
+                                   <items>
+                                     <MenuItem fx:id="eventButton" mnemonicParsing="false" style="-fx-background-color: #C9F7FA;" text="Event" />
+                                     <MenuItem fx:id="taskButton" mnemonicParsing="false" text="Task" />
+                                   </items>
+                                    <font>
+                                       <Font name="Monospaced Bold Italic" size="29.0" />
+                                    </font>
+                                 </MenuButton>
+                                 <Button fx:id="settingsButton" mnemonicParsing="false" prefHeight="64.0" prefWidth="189.0" style="-fx-background-color: #EEF5DB; -fx-border-width: 5; -fx-border-color: #D6D1B1; -fx-border-style: segments(10, 15, 15, 15)  line-cap round;" text="Settings" textFill="#f0b67f">
+                                    <font>
+                                       <Font name="Monospaced Bold" size="29.0" />
+                                    </font>
+                                 </Button>
+                              </children>
+                           </HBox>
+                           <Separator prefWidth="200.0" style="-fx-background-color: #AEECEF;" />
+                           <Button fx:id="saveButton" mnemonicParsing="false" prefHeight="84.0" prefWidth="430.0" style="-fx-background-color: #EEF5DB; -fx-border-width: 5; -fx-border-color: #D6D1B1; -fx-border-style: segments(10, 15, 15, 15)  line-cap round;" text="Save" textFill="#f0b67f">
+                              <font>
+                                 <Font name="Monospaced Bold" size="29.0" />
+                              </font>
+                           </Button>
+                        </children>
+                     </VBox>
+                  </children>
+               </HBox>
+            </bottom>
+         </BorderPane>
+      </children></AnchorPane>
+</Scene>

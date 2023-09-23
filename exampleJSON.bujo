@@ -1,0 +1,89 @@
+{
+  "events-list" : [ {
+    "name" : "Event 1",
+    "description" : "Some descrpiton of e1",
+    "day-of-week" : "TUESDAY",
+    "start-time" : "12:40",
+    "duration" : 30,
+    "status" : "INCOMPLETE",
+    "category" : "HOME"
+  }, {
+    "name" : "event 2 ",
+    "description" : "descrition of e2",
+    "day-of-week" : "WEDNESDAY",
+    "start-time" : "8:30",
+    "duration" : 90,
+    "status" : "COMPLETE",
+    "category" : "OTHER"
+  }, {
+    "name" : "event hypier link",
+    "description" : "This event is to https://google.com",
+    "day-of-week" : "MONDAY",
+    "start-time" : "12:21",
+    "duration" : 21,
+    "status" : "INCOMPLETE",
+    "category" : "HOME"
+  }, {
+    "name" : "Some",
+    "description" : "",
+    "day-of-week" : "SUNDAY",
+    "start-time" : "12:22",
+    "duration" : 22,
+    "status" : "INCOMPLETE",
+    "category" : "HOME"
+  } ],
+  "task-list" : [ {
+    "name" : "Some task 1",
+    "description" : "task 1",
+    "day-of-week" : "TUESDAY",
+    "status" : "COMPLETE",
+    "category" : "WORK"
+  }, {
+    "name" : "taks2",
+    "description" : "desc t2",
+    "day-of-week" : "MONDAY",
+    "status" : "INCOMPLETE",
+    "category" : "HOME"
+  }, {
+    "name" : "hi",
+    "description" : "bye",
+    "day-of-week" : "FRIDAY",
+    "status" : "COMPLETE",
+    "category" : "OTHER"
+  }, {
+    "name" : "in class",
+    "description" : "soup",
+    "day-of-week" : "SATURDAY",
+    "status" : "INCOMPLETE",
+    "category" : "SCHOOL"
+  }, {
+    "name" : "schooltask",
+    "description" : "schooldesc",
+    "day-of-week" : "THURSDAY",
+    "status" : "INCOMPLETE",
+    "category" : "SCHOOL"
+  }, {
+    "name" : "hyper link testing",
+    "description" : "This task to https://google.com",
+    "day-of-week" : "SUNDAY",
+    "status" : "INCOMPLETE",
+    "category" : "SCHOOL"
+  }, {
+    "name" : "some task I just made",
+    "description" : "",
+    "day-of-week" : "MONDAY",
+    "status" : "INCOMPLETE",
+    "category" : "HOME"
+  }, {
+    "name" : "dw",
+    "description" : "dwd",
+    "day-of-week" : "SUNDAY",
+    "status" : "INCOMPLETE",
+    "category" : "HOME"
+  } ],
+  "notes" : "He",
+  "flipped" : false,
+  "max-tasks" : 7,
+  "max-events" : 2,
+  "password" : "123"
+}
